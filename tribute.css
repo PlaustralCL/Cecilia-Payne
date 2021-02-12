@@ -1,6 +1,6 @@
 /* Stylesheet for tribute page */
 html{
-      background-color: #e6ebf5;
+      background-color: #fffee8;
       font-family: 'Lora', serif; 
     }
     h1{
@@ -24,8 +24,10 @@ html{
       text-align: center;
      }
    ul{
-     padding-left: 25%;
-     padding-right: 20%;
+     display: block;
+     width: 40%;
+     margin-left: 30%;
+     margin-right: 30%; 
    }
    li{
     margin-top: 10px;
