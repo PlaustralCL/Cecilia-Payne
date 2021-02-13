@@ -1,16 +1,12 @@
 # Product Landing Page
 
 ## Description
-
-## Objectives
-
-# Description
 Build a product landing page.
 
 This is a Free Code Camp Project. For more details see:
 freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page
 
-# Objectives
+## Objectives
 1. Use header and nav elements
 2. Create a navigation bar
 3. Embed a video
