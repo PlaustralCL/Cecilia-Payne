@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Rusell Harmonias</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lp-styles.css">
+  </head>
+  
+  <body>
+    <header class="flex-container text-center" id="header">
+     
+      <!-- TODO: keep nav bar at top of the screen -->
+      
+      <img 
+          class="logo" 
+          id="header-img" 
+          src="https://cdn.pixabay.com/photo/2013/07/13/12/10/harmonica-159331_960_720.png"
+          alt="Rusell Harmonicas logo">        
+      <h1 id="title">Rusell Harmonicas</h1>
+
+      <nav id="nav-bar">
+        <ul class="flex-container">
+          <li class="nav-link"><a href="#products">Products</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#form">Contact</a></li>
+        </ul>
+      </nav>      
+    </header>
+    
+    <main>
+      <!-- Product Descriptions -->
+      <div class="text-center" id="products">
+        <h2>Product Information</h2>               
+        <div class="flex-container text-center">
+          
+          <!-- Chromatic Harmonicas -->
+          <div class="box">
+            <h3>Chromatic Harmonicas</h3>
+            <p>Most chromatic harmonicas have a button-activated lever that                
+                directs air to two separate reed plates that include all the 
+                notes in the 12-tone western scale.</p> 
+                <!-- MusciansFriend.com, https://www.musiciansfriend.com/thehub/harmonica-buying-guide, 
+                visited 2/13/21 -->     
+          </div>
+          
+          <!-- Diatonic Harmonicas -->
+          <div class="box">
+            <h3>Diatonic Harmonicas</h3>
+            <p>The most common type of harmonica you’ll encounter in pop, 
+                  blues and folk music—diatonic harmonicas are designed to play 
+                  in a specific key. </p> 
+                  <!-- MusciansFriend.com, https://www.musiciansfriend.com/thehub/harmonica-buying-guide, 
+                  visited 2/13/21 -->  
+          </div>
+        </div>
+      </div>
+       
+      <!-- Video -->
+      <div class="text-center"> <!-- Centers the video on the page -->
+       
+       <!-- iframe is the recommended element for embedding YouTube videos.
+        this iframe was copied from YouTube from the share option. -->
+        <iframe 
+            class="block"
+            id="video"
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/bghOBRA0z-Y" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>        
+      </div>
+      <br><br>
+      
+      <!-- About the company -->
+      <div id="about">
+      <h2 class="text-center"> About Rusell Harmonicas</h2>
+      <p> Rusell Harmonicas has been a Dallas tradition since 1910 when it was
+          founded by Mark Rusell. Mark had a passion for music and was 
+          determined to make the best harmonicas possible. After a small loan 
+          from his best friend Brad Smith, Mark was able to open his harmonica
+          factory. Since that humble beginning, Rusell Harmonicas has been the 
+          top manufacture of quality harmonicas in the United States.</p>      
+      </div>
+        
+      <!-- Contact information -->
+      <h2 class="text-center">Contact Us</h2>
+      <form class="text-center" id="form">
+        <label for="email">Please enter your email to learn more:</label>
+        <input 
+            id="email"
+            name="email" 
+            type="email" 
+            placeholder="youremail@email.com"
+            required>
+        <br><br>
+        
+        <input 
+            id="submit"
+            name="submit"
+            type="submit"
+            value="Submit Request"
+            formaction="https://www.freecodecamp.com/email-submit">      
+      </form>
+    </main>
+    
+  </body>
+  <!-- <script src="myscript.js"> -->
+</html>
