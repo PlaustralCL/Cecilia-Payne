@@ -36,7 +36,6 @@ header{
 
 /* Specifies that that Company title should be at least 50% of the header width */
 
-
 .logo {
  
   left: 0;
@@ -46,7 +45,7 @@ header{
   object-fit: contain; 
 }
 
-nav ul{
+#nav-bar{
   position: fixed; /* Keeps the nav bar at the top of the screen */
   top: 0;
   right: 0;
@@ -61,8 +60,6 @@ nav ul{
    background-color: pink;  
  }
   
-
-
 /***** || Main Section *****/
 .space-evenly {
   justify-content: space-evenly; /* Needed to overwrite the justify-propery used above */
@@ -91,8 +88,7 @@ nav ul{
 .relative {
   position: relative;
 }
-
   
-.border {
+.border { /*Used for troubleshooting */
   border-style: dashed;
 }

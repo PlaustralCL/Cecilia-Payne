@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <!-- Product Landing Page for Free Code Camp. Details of the requirements:
+    https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page -->    
     <title>Rusell Harmonias</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +10,7 @@
   </head>
   
   <body>
-    <header  id="header">
-     
-      <!-- TODO: keep nav bar at top of the screen -->
-      
-      
+    <header  id="header">     
       <div class="flex-container text-center"> 
         <img 
             class="logo" 
@@ -22,17 +20,13 @@
         <h1 id="title">Rusell Harmonicas</h1>
       </div> 
        
-       
         <nav class="text-center" id="nav-bar">
           <ul >
-            <li class="nav-link"><a href="#products">Products</a></li>
-            <li class="nav-link"><a href="#about">About</a></li>
-            <li class="nav-link"><a href="#form">Contact</a></li>
+            <li ><a class="nav-link" href="#products">Products</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#form">Contact</a></li>
           </ul>
         </nav> 
-      
-     
-      
     </header>
     
     <main>
@@ -105,7 +99,10 @@
         
       <!-- Contact information -->
       <h2 class="text-center">Contact Us</h2>
-      <form class="text-center" id="form">
+      <form 
+          class="text-center" 
+          id="form" 
+          action="https://www.freecodecamp.com/email-submit">
         <label for="email">Please enter your email to learn more:</label>
         <input 
             id="email"
@@ -119,8 +116,7 @@
             id="submit"
             name="submit"
             type="submit"
-            value="Submit Request"
-            formaction="https://www.freecodecamp.com/email-submit">      
+            value="Submit Request">      
       </form>
     </main>
     
