@@ -11,66 +11,76 @@ header{
 .flex-container{
   display: flex;
   flex-wrap: wrap;  
-  justify-content: space-evenly;
+  justify-content: center; /*Keeps the logo and title next to each other, and centered*/
   align-items: center;
-  padding-left: 0;
-  
+  padding-left: 0;  
+}
+
+#title{
+  margin-left: 10px;
 }
 
 @media (max-width: 544px){
   .flex-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;  
+    justify-content: center; 
     align-items: center;
     flex-wrap: wrap;  
+  }
+  
+  #title {
+    margin-top:0;
   }
 }
 
 /* Specifies that that Company title should be at least 50% of the header width */
-#title {
-  width: 50%;
-}
+
 
 .logo {
+ 
+  left: 0;
+  top: 0px;
   width: 100px;
   height: 100px;
   object-fit: contain; 
 }
 
 nav ul{
-  list-style-type: none;
-  background-color: dodgerblue;
-  
+  position: fixed; /* Keeps the nav bar at the top of the screen */
+  top: 0;
+  right: 0;
+  list-style-type: none;  
+  padding-left: 0;  
+ }
+ 
+ nav li {   
+   display: inline;
+   margin: 20px;
+   background-color: #f1f1f1; 
+   background-color: pink;  
  }
   
-.nav-link {  
-  margin: 10px;
-  background-color: #f1f1f1; 
-  background-color: pink;  
-}
+
 
 /***** || Main Section *****/
-#about {
-  margin: 20px;
+.space-evenly {
+  justify-content: space-evenly; /* Needed to overwrite the justify-propery used above */
 }
 
-
-
-
-
 .box{
- height: 200px;
- width: 200px;
- border-style: solid:
- background-color: ;
+ height: 225px;
+ width: 225px;
+ border-style: solid;
  background-color: dodgerblue;
  margin-bottom: 40px;
 }
 
 .box p{
+  
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 /**** || Utilities ****/
@@ -78,7 +88,11 @@ nav ul{
 .text-center {
   text-align: center;
 }
+.relative {
+  position: relative;
+}
 
+  
 .border {
   border-style: dashed;
 }
