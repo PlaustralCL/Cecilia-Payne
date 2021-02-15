@@ -3,8 +3,7 @@
 ## Description
 Build a product landing page.
 
-This is a Free Code Camp Project. For more details on the project requirments see:
-freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page
+This is a Free Code Camp Project. [Link to project requirements](freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 
 The final project can be seen on [CodePen.](https://codepen.io/plaustralcl/full/gOLgjqe)
 
