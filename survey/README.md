@@ -3,8 +3,9 @@
 ## Description
 Build and format a basic form.
 
-Free Code Camp Survey project. For more information and project requirements, please see:
-https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form 
+Free Code Camp Survey project. [Link to project requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+
+The completed project can be viewed on [CodePen.](https://codepen.io/plaustralcl/full/MWbbBGg)
 
 ## Objectives
 1. Demonstrate the use of the following form elements:
