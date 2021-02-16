@@ -12,7 +12,18 @@
   </head>
   
   <body>
-    <header  id="header">     
+    <div class="box-gap"></div>
+    <header  id="header">  
+      <div class="menu__box"> <!-- Added the menu-box and moved nav-section to the beginning -->
+        <nav class="text-center" id="nav-bar">
+          <ul class="menu__ul">
+            <li class="menu__li"><a class="nav-link menu__a" href="#products">Products</a></li>
+            <li class="menu__li"><a class="nav-link menu__a" href="#about">About</a></li>
+            <li class="menu__li"><a class="nav-link menu__a" href="#form">Contact</a></li>
+          </ul>
+        </nav>         
+      </div>
+      
       <div class="flex-container text-center"> 
         <img 
             class="logo" 
@@ -21,27 +32,18 @@
             alt="Rusell Harmonicas logo">        
         <h1 id="title">Rusell Harmonicas</h1>
       </div> 
-       
-        <nav class="text-center" id="nav-bar">
-          <ul >
-            <li ><a class="nav-link" href="#products">Products</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#form">Contact</a></li>
-          </ul>
-        </nav> 
     </header>
     
     <main>
       <!-- Product Descriptions -->
-      <div class="text-center" id="products">
+      <section class="text-center" id="products">
         <h2>Product Information</h2>               
         <div class="flex-container text-center space-evenly">
           
           <!-- Chromatic Harmonicas -->
-          <div class="box">
-            <div class="box-highlight"></div>
+          <div class="box">            
             <h3>Chromatic Harmonicas</h3>
-            <p>Most chromatic harmonicas have a button-activated lever that                
+            <p class="box__p">Most chromatic harmonicas have a button-activated lever that                
                 directs air to two separate reed plates that include all the 
                 notes in the 12-tone western scale.</p> 
                 <!-- MusciansFriend.com, https://www.musiciansfriend.com/thehub/harmonica-buying-guide, 
@@ -50,9 +52,8 @@
           
           <!-- Diatonic Harmonicas -->
           <div class="box">
-          <div class="box-highlight"></div>
             <h3>Diatonic Harmonicas</h3>
-            <p>The most common type of harmonica you’ll encounter in pop, 
+            <p class="box__p">The most common type of harmonica you’ll encounter in pop, 
                   blues and folk music—diatonic harmonicas are designed to play 
                   in a specific key. </p> 
                   <!-- MusciansFriend.com, https://www.musiciansfriend.com/thehub/harmonica-buying-guide, 
@@ -61,70 +62,71 @@
           
           <!-- Tremolo Harmonicas -->          
            <div class="box">
-           <div class="box-highlight"></div>
             <h3>Tremolo  Harmonicas</h3>
-            <p>Tremolo harmonicas produce their distinctive warbling sound through 
+            <p class="box__p">Tremolo harmonicas produce their distinctive warbling sound through 
                 the use of two reeds per note, one tuned slightly sharp, the 
                 other slightly flat. </p> 
                   <!-- MusciansFriend.com, https://www.musiciansfriend.com/thehub/harmonica-buying-guide, 
                   visited 2/13/21 -->  
           </div>          
         </div>
-      </div>
+      </section>
       <br>
        
       <!-- Video -->
-      <div class="text-center"> <!-- Centers the video on the page -->
+      <section class="text-center"> <!-- Centers the video on the page -->
        
        <!-- iframe is the recommended element for embedding YouTube videos.
         this iframe was copied from YouTube from the share option. -->
-        <iframe 
+      <iframe 
             class="block"
             id="video"
             width="560" 
             height="315" 
             src="https://www.youtube.com/embed/bghOBRA0z-Y" 
-            frameborder="0" 
+            frameborder="0"             
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
-        </iframe>        
+        </iframe> 
       </div>
       <br><br><br>
       
       <!-- About the company -->
-      <div id="about">
+      <section id="about">
       <h2 class="text-center"> About Rusell Harmonicas</h2>
-      <p class="about-p"> Rusell Harmonicas has been a Dallas tradition since 1910 when it was
+      <p class="about__p"> Rusell Harmonicas has been a Dallas tradition since 1910 when it was
           founded by Mark Rusell. Mark had a passion for music and was 
           determined to make the best harmonicas possible. After a small loan 
           from his best friend Brad Smith, Mark was able to open his harmonica
           factory. Since that humble beginning, Rusell Harmonicas has been the 
           top manufacture of quality harmonicas in the United States.</p>      
-      </div>
+      </section>
       <br><br><br>
         
       <!-- Contact information -->
-      <h2 class="text-center">Contact Us</h2>
-      <form 
-          class="text-center" 
-          id="form" 
-          action="https://www.freecodecamp.com/email-submit">
-        <label for="email">Please enter your email to learn more:</label>
-        <input 
-            id="email"
-            name="email" 
-            type="email" 
-            placeholder="youremail@email.com"
-            required>
-        <br><br>
-        
-        <input 
-            class="btn"
-            id="submit"
-            name="submit"
-            type="submit"
-            value="Submit Request">      
-      </form>
+      <section>
+        <h2 class="text-center">Contact Us</h2>
+        <form 
+            class="text-center" 
+            id="form" 
+            action="https://www.freecodecamp.com/email-submit">
+          <label for="email">Please enter your email to learn more:</label>
+          <input 
+              id="email"
+              name="email" 
+              type="email" 
+              placeholder="youremail@email.com"
+              required>
+          <br><br>
+          
+          <input 
+              class="btn"
+              id="submit"
+              name="submit"
+              type="submit"
+              value="Submit Request">      
+        </form>
+    </section>
     </main>
     
   </body>
