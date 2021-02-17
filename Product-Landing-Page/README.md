@@ -16,3 +16,7 @@ The final project can be seen on [CodePen.](https://codepen.io/plaustralcl/full/
 6. Use a least one media query
 7. Utilize CSS flexbox at least once.
 
+## Built with:
+* Plain CSS
+* Google Fonts
+

@@ -2,19 +2,18 @@
 <html lang="en-us">
   <head>
     <!-- Product Landing Page for Free Code Camp. Details of the requirements:
-    https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page -->    
-    <title>Rusell Harmonias</title>
+      https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page -->    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rusell Harmonias</title>
     <link rel="stylesheet" href="lp-styles.css">    
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap" rel="stylesheet">
   </head>
   
-  <body>
-    <div class="box-gap"></div>
+  <body>    
     <header  id="header">  
-      <div class="menu__box"> <!-- Added the menu-box and moved nav-section to the beginning -->
+      <div class="menu__box">
         <nav class="text-center" id="nav-bar">
           <ul class="menu__ul">
             <li class="menu__li"><a class="nav-link menu__a" href="#products">Products</a></li>
@@ -24,7 +23,7 @@
         </nav>         
       </div>
       
-      <div class="flex-container text-center"> 
+      <div class="text-center"> 
         <img 
             class="logo" 
             id="header-img" 
@@ -78,28 +77,29 @@
        
        <!-- iframe is the recommended element for embedding YouTube videos.
         this iframe was copied from YouTube from the share option. -->
-      <iframe 
-            class="block"
-            id="video"
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/bghOBRA0z-Y" 
-            frameborder="0"             
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe> 
-      </div>
-      <br><br><br>
-      
-      <!-- About the company -->
-      <section id="about">
-      <h2 class="text-center"> About Rusell Harmonicas</h2>
-      <p class="about__p"> Rusell Harmonicas has been a Dallas tradition since 1910 when it was
-          founded by Mark Rusell. Mark had a passion for music and was 
-          determined to make the best harmonicas possible. After a small loan 
-          from his best friend Brad Smith, Mark was able to open his harmonica
-          factory. Since that humble beginning, Rusell Harmonicas has been the 
-          top manufacture of quality harmonicas in the United States.</p>      
+        <iframe 
+              class="block"
+              id="video"
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/bghOBRA0z-Y" 
+              frameborder="0"             
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+          </iframe> 
+        </div>
+        <br><br><br>        
+      </section>
+
+        <!-- About the company -->
+        <section id="about">
+        <h2 class="text-center"> About Rusell Harmonicas</h2>
+        <p class="about__p"> Rusell Harmonicas has been a Dallas tradition since 1910 when it was
+            founded by Mark Rusell. Mark had a passion for music and was 
+            determined to make the best harmonicas possible. After a small loan 
+            from his best friend Brad Smith, Mark was able to open his harmonica
+            factory. Since that humble beginning, Rusell Harmonicas has been the 
+            top manufacture of quality harmonicas in the United States.</p>      
       </section>
       <br><br><br>
         
@@ -109,7 +109,7 @@
         <form 
             class="text-center" 
             id="form" 
-            action="https://www.freecodecamp.com/email-submit">
+            action="https://www.freecodecamp.com/email-submit">            
           <label for="email">Please enter your email to learn more:</label>
           <input 
               id="email"
@@ -117,8 +117,7 @@
               type="email" 
               placeholder="youremail@email.com"
               required>
-          <br><br>
-          
+          <br><br>          
           <input 
               class="btn"
               id="submit"
@@ -128,7 +127,5 @@
         </form>
     </section>
     </main>
-    
-  </body>
-  <!-- <script src="myscript.js"> -->
+      </body>
 </html>
