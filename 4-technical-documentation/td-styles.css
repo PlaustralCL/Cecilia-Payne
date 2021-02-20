@@ -55,6 +55,8 @@ Color Palette
 .main { 
   grid-area: main;
   overflow-y: scroll;  
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;  
 }
 
@@ -72,6 +74,20 @@ Color Palette
   }
   .nav {  
     border-bottom: 5px solid black;
+  }
+}
+
+@media (min-width: 1020px) {
+  .main-container {
+    background-color:#e3e3e3;
+  }
+
+  .nav {
+    background-color: white;
+  }
+
+  .main {
+    background-color: white;
   }
 }
 
@@ -154,4 +170,8 @@ Color Palette
 
 .code--nobreak {    
   white-space: normal;
+}
+
+.code--in-text {
+  display: inline;
 }
