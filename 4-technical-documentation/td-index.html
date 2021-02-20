@@ -5,32 +5,78 @@
   https://www.techotopia.com/index.php/Ruby_Essentials, viewed on 2/18/21 -->
 
 
-    <title>My test page</title>
+    <title>Ruby Documention</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="td-styles.css">
+    <!-- Fonts-->
+   
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bitter&family=JetBrains+Mono&family=Lato&family=Raleway&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lora&family=Merriweather&display=swap" rel="stylesheet">
   </head>
   
   <body>
     <div class="container">
-      <header class="head">Heading</header>
-      <div class="body-container">
-        <nav class="nav" id="navbar">Navbar</nav>
+      <header class="head"></header>
+      <div class="main-container">
+        
+        <nav class="nav" id="navbar">
+          <img class="nav__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png"
+          alt="Ruby Logo picture, a faceted ruby on its side">
+          <h2 class="nav__title">Ruby Documentation</h2>
+          <ul class="nav__ul">
+            <li class="nav__li"><a class="nav-link" href="#about_ruby"> About Ruby</a></li>
+            <li class="nav__li"><a class="nav-link" href="#hello_world">Hello World</a></li>
+            <li class="nav__li"><a class="nav-link" href="#commenting">Commenting</a></li>
+            <li class="nav__li"><a class="nav-link" href="#ruby_constants">Ruby Constants</a></li>
+            <li class="nav__li"><a class="nav-link" href="#declaring_a_variable">Declaring a Variable</a></li>
+            <li class="nav__li"><a class="nav-link" href="#references">References</a></li>
+          </ul>
+        </nav>
+
         <main class="main" id="main-doc">
-          <section class="main-section">
+          <!-- Beginning of the real content -->
+          <section class="main-section" id="about_ruby">
             <header>
-              <h2>Section Heading</h2>
+              <h2>About Ruby</h2>
             </header>
-
-
+            <p>
+              Ruby is an object-oriented interpreted scripting language. Ruby 
+              was created by Yukihiro Matsumoto (more affectionately known as 
+              Matz) in Japan starting in 1993. Matz essentially kept Ruby to 
+              himself until 1995 when he released it to the public. Ruby 
+              quickly gained a following in Matz's home country of Japan in 
+              the following years, and finally gained recognition in the rest 
+              of the programming world beginning in the year 2000. From that 
+              point on Ruby has grown in popularity, particularly because of 
+              the popularity of the Ruby on Rails web application development 
+              framework.
+            </p>
+            <p>Why is Ruby Popular?</p>
+            <ul>
+              <li>Ruby is a very intuitive and clean programming language.</li>
+              <li>Ruby a less challenging to learn than some other languages.</li>
+              <li>Ruby is also a great general purpose language</li>
+              <li>Ruby isextensible, enabling new functionality to be added 
+                through the integration third-party libraries</li>
+              <li>Ruby is portable</li>
+            </ul>
           </section>
 
-          <section class="main-section">
+          <section class="main-section" id="hello_world">
             <header>
-              <h2>Section Heading</h2>
+              <h2>Hello World</h2>
+              <!-- Hello World section from https://www.learnrubyonline.org/en/Hello_World-->
             </header>
-
-
+            <p>
+              One of the most basic tasks in any programming language is to 
+              display information to the user. To print something to the 
+              console so the user can see it, use <code>puts</code>.
+            </p>
+            <code class="code"
+              >puts 'Hello World !!!'
+              Hello World !!!
+              => nil</code>
           </section>
 
           <section class="main-section" id="commenting">
@@ -55,13 +101,13 @@
                 to a simple script:
               </p>
               
-              <code class="code--nobreak"
+              <code class="code code--nobreak"
                 ># This is a comment line - it explains that 
                 the next line of code displays a welcome message print 
                 "Welcome to Ruby!"</code> 
           </section>
 
-          <section class="main-section" id="ruby-constants">
+          <section class="main-section" id="ruby_constants">
             <header>
               <h2>Ruby Constants</h2>
             </header>
@@ -72,22 +118,21 @@
                 convention for declaring constants is to use uppercase letters 
                 for the entire name). For example:
               </p>
-                <code class="code"
-                >MYCONSTANT = "hello"
-                  => "hello"</code>                
-                <p>Unlike other programming languages, Ruby actually allows the 
-                  value assigned to a constant to be changed after it has been 
-                  created. The Ruby interpreter will, however, issue a 
-                  warning - even though it allows the change:
-                </p>
-                <code class="code"
-                  >MYCONSTANT = "hello2"
-                  (irb):34: warning: already initialized constant MYCONSTANT
-                  => "hello2"</code>
-                
+              <code class="code"
+              >MYCONSTANT = "hello"
+                => "hello"</code>                
+              <p>Unlike other programming languages, Ruby actually allows the 
+                value assigned to a constant to be changed after it has been 
+                created. The Ruby interpreter will, however, issue a 
+                warning - even though it allows the change:
+              </p>
+              <code class="code"
+                >MYCONSTANT = "hello2"
+                (irb):34: warning: already initialized constant MYCONSTANT
+                => "hello2"</code>                
           </section>
 
-          <section class="main-section">
+          <section class="main-section" id="declaring_a_variable">
             <header>
               <h2>Declaring a Variable</h2>
             </header>
@@ -99,40 +144,33 @@
             </p>
             <code class="code"
               >y = 10</code>
-            
-
-
+            <p>In common with some other scripting languages, Ruby supports 
+              something called parallel assignment. This is useful if you need 
+              to assign values to a number of variables. One way to do this 
+              would be as follows:</p>
+            <code class="code"
+            >a = 10
+            b = 20
+            c = 30
+            d = 40</code>
           </section>
 
-
-
-          
-            
-          
-
-
-        </main>
-      </div> <!-- End of the body division-->
-        <footer class="foot">Foot</footer>
-
-
-
-
-
-      
-
-      
-      
-
-
-
-
-
-
-    </div>
-    
-    
-    
-  </body>
-  <!-- <script src="myscript.js"> -->
+          <section class="main-section" id="references">
+            <header>
+              <h2>References</h2>
+            </header>
+            <ul>
+              <li>The Hello World section was taken from 
+                  <a href="https://www.learnrubyonline.org/en/Hello_World" target="_blank">
+                  Learn Ruby</a>.</li>
+              <li>The remaining documention is from 
+                  <a href="http://www.techotopia.com/index.php/Ruby_Essentials" 
+                  target="_blank">Ruby Essentials</a>.</li>
+            </ul>
+          </section>
+       </main>
+      </div> <!-- End of the main-container division-->
+        <footer class="foot"></footer>
+    </div><!-- End of the container division-->
+  </body>  
 </html>
