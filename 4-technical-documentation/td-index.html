@@ -4,26 +4,25 @@
 <!-- Ruby technical information "Ruby Essentials", 
   https://www.techotopia.com/index.php/Ruby_Essentials, viewed on 2/18/21 -->
 
-
     <title>Ruby Documention</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="td-styles.css">
-    <!-- Fonts-->
-   
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Bitter&family=JetBrains+Mono&family=Lato&family=Raleway&display=swap" rel="stylesheet"> -->
+    <!-- Fonts--> 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lora&family=Merriweather&display=swap" rel="stylesheet">
+    
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="td-styles.css">
   </head>
   
-  <body>
+  <body class="page">
     <div class="container">
-      <header class="head"></header>
+      <div class="page-heading"></div>
       <div class="main-container">
         
         <nav class="nav" id="navbar">
           <img class="nav__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png"
           alt="Ruby Logo picture, a faceted ruby on its side">
-          <h2 class="nav__title">Ruby Documentation</h2>
+          <header class="nav__title">Ruby Documentation</header>
           <ul class="nav__ul">
             <li class="nav__li"><a class="nav-link" href="#about_ruby"> About Ruby</a></li>
             <li class="nav__li"><a class="nav-link" href="#hello_world">Hello World</a></li>
@@ -37,10 +36,8 @@
         <main class="main" id="main-doc">
           <!-- Beginning of the real content -->
           <section class="main-section" id="about_ruby">
-            <header>
-              <h2>About Ruby</h2>
-            </header>
-            <p>
+            <header class="main__header">About Ruby</header>
+            <p class="main__text">
               Ruby is an object-oriented interpreted scripting language. Ruby 
               was created by Yukihiro Matsumoto (more affectionately known as 
               Matz) in Japan starting in 1993. Matz essentially kept Ruby to 
@@ -52,8 +49,8 @@
               the popularity of the Ruby on Rails web application development 
               framework.
             </p>
-            <p>Why is Ruby Popular?</p>
-            <ul>
+            <p class="main__text">Why is Ruby Popular?</p>
+            <ul class="main__ul">
               <li>Ruby is a very intuitive and clean programming language.</li>
               <li>Ruby a less challenging to learn than some other languages.</li>
               <li>Ruby is also a great general purpose language</li>
@@ -64,11 +61,10 @@
           </section>
 
           <section class="main-section" id="hello_world">
-            <header>
-              <h2>Hello World</h2>
+            <header class="main__header">Hello World
               <!-- Hello World section from https://www.learnrubyonline.org/en/Hello_World-->
             </header>
-            <p>
+            <p class="main__text">
               One of the most basic tasks in any programming language is to 
               display information to the user. To print something to the 
               console so the user can see it, use <code>puts</code>.
@@ -80,10 +76,8 @@
           </section>
 
           <section class="main-section" id="commenting">
-            <header>
-              <h2>Commenting</h2>
-            </header>
-              <p>
+            <header class="main__header">Commenting</header>
+              <p class="main__text">
                 Commenting is the process of marking content in a program such 
                 that it is ignored by the Ruby interpreter. This is typically 
                 used so that the programmer can write notes alongside the code 
@@ -91,11 +85,11 @@
                 at the code will have a better chance of understanding the 
                 code.
               </p>
-              <p>
+              <p class="main__text">
                 Comments can span multiple lines, occupy a single line, or 
                 be tacked onto the end of a line of code.
               </p>
-              <p>
+              <p class="main__text">
                 Single line comments in a Ruby script are defined with 
                 the '#' character. For example, to add a single line comment 
                 to a simple script:
@@ -108,10 +102,8 @@
           </section>
 
           <section class="main-section" id="ruby_constants">
-            <header>
-              <h2>Ruby Constants</h2>
-            </header>
-              <p>
+            <header class="main__header">Ruby Constants</header>
+              <p class="main__text">
                 A Ruby constant is used to store a value for the duration of 
                 a Ruby program's execution. Constants are declared by 
                 beginning the variable name with a capital letter (a common 
@@ -121,7 +113,7 @@
               <code class="code"
               >MYCONSTANT = "hello"
                 => "hello"</code>                
-              <p>Unlike other programming languages, Ruby actually allows the 
+              <p class="main__text">Unlike other programming languages, Ruby actually allows the 
                 value assigned to a constant to be changed after it has been 
                 created. The Ruby interpreter will, however, issue a 
                 warning - even though it allows the change:
@@ -133,10 +125,8 @@
           </section>
 
           <section class="main-section" id="declaring_a_variable">
-            <header>
-              <h2>Declaring a Variable</h2>
-            </header>
-            <p>
+            <header class="main__header">Declaring a Variable</header>
+            <p class="main__text">
               Variables are declared and assigned values by placing the 
               variable name and the value either side of the assignment 
               operator (=). For example, to assign a value of 10 to a variable 
@@ -144,7 +134,7 @@
             </p>
             <code class="code"
               >y = 10</code>
-            <p>In common with some other scripting languages, Ruby supports 
+            <p class="main__text">In common with some other scripting languages, Ruby supports 
               something called parallel assignment. This is useful if you need 
               to assign values to a number of variables. One way to do this 
               would be as follows:</p>
@@ -156,16 +146,14 @@
           </section>
 
           <section class="main-section" id="references">
-            <header>
-              <h2>References</h2>
-            </header>
-            <ul>
+            <header class="main__header">References</header>
+            <ul class="main__ul">
               <li>The Hello World section was taken from 
                   <a href="https://www.learnrubyonline.org/en/Hello_World" target="_blank">
                   Learn Ruby</a>.</li>
               <li>The remaining documention is from 
                   <a href="http://www.techotopia.com/index.php/Ruby_Essentials" 
-                  target="_blank">Ruby Essentials</a>.</li>
+                  target="_blank">Ruby Essentials</a> by Neil Smith.</li>
             </ul>
           </section>
        </main>
