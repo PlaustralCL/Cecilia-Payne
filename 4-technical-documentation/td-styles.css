@@ -55,13 +55,11 @@ Color Palette
 .main { 
   grid-area: main;
   overflow-y: scroll;  
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px;  
 }
 
 /*media query to change the layout of .nav and .main to single column for mobile */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .main-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -77,17 +75,20 @@ Color Palette
   }
 }
 
-@media (min-width: 1020px) {
-  .main-container {
-    background-color:#e3e3e3;
-  }
-
-  .nav {
-    background-color: white;
-  }
-
+/* Two breakpoints for larger screens. This helps centers the text while keeping
+    the scroll bar on the far right of the screen. */
+@media (min-width: 1280px) {
   .main {
-    background-color: white;
+    padding-left: 117px;
+    padding-right: 117px;
+  }
+}
+
+/* This breakpoint is based on the Tailwind 2xl point */
+@media (min-width: 1536px) { 
+  .main {
+    padding-left: 247px;
+    padding-right: 247px;
   }
 }
 
@@ -117,7 +118,7 @@ Color Palette
   padding-left: 0; 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .nav__ul {
     text-align: center;
   }
@@ -148,13 +149,13 @@ Color Palette
 }
 
 .main__text {
-  max-width: 900px; 
+  max-width: 800px; 
      /* limits the width of text to minimize horizontal eye and head motion */
   font-family: 'Merriweather', serif;
 }
 
 .main__ul {
-  max-width: 900px;
+  max-width: 800px;
   font-family: 'Merriweather', serif;
 }
 
@@ -162,7 +163,7 @@ Color Palette
   display: block;
   font-family: 'Inconsolata', monospace;  
   white-space: pre-line;
-  max-width: 900px;
+  max-width: 800px;
   background-color: #e3e3e3;
   border-style: solid;
   border-color: #e3e3e3;
