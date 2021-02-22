@@ -1,12 +1,21 @@
 /* Style sheet for Product Landing Page */
 
-/* Color Palette:
-#C98912 - burnt orange (from harmonica picture) - base color, hightlight in boxes
-#4A1B00 - dark brown - box borders, font color
-#DFE0DF - silvery grey - background for product boxes
-from mycolor.space (switch palette)*/
 
-/* Whole page font sizes and color */
+/***** || Design Information *****
+
+  Color Palette:
+  #C98912 - burnt orange (from harmonica picture) - base color, hightlight in boxes
+  #4A1B00 - dark brown - box borders, font color
+  #DFE0DF - silvery grey - background for product boxes
+  from mycolor.space (switch palette)
+
+  Fonts:
+    Headings - Abril Fatface;
+    Body text - Lato;
+
+******/
+
+/***** || Whole page font sizes and color *****/
 
 body{
  color: #4A1B00; /*setting dark brown as the font-color for the whole page */
@@ -30,7 +39,7 @@ h3 {
 
 p { font-size: 16px;}
 
-@media (max-width: 544px){
+@media (max-width: 544px) {
   h1 {font-size: 32px;}
   h2 {font-size: 24px;}  
   p {font-size: 16px;}
@@ -75,8 +84,6 @@ p { font-size: 16px;}
     padding-bottom: 9px;
     padding-left: 3px;
   }
-
-
 
 .flex-container {
   /* This was used for the logo and title but that was switched to inline to 
@@ -129,7 +136,7 @@ p { font-size: 16px;}
 
 a:hover {
    background-color: #4A1B00;   
- }   
+ }
   
 /***** || Main Section *****/
 .space-evenly { /* Needed to overwrite the justify-propery 
