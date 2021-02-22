@@ -12,7 +12,8 @@
   </head>
   
   <body>    
-    <header  id="header">  
+    <header  id="header"> 
+      <!-- Navbar --> 
       <div class="menu__box">
         <nav class="text-center" id="nav-bar">
           <ul class="menu__ul">
@@ -23,6 +24,7 @@
         </nav>         
       </div>
       
+      <!-- Logo and title -->
       <div class="text-center"> 
         <img 
             class="logo" 
@@ -35,7 +37,7 @@
     
     <main>
       <!-- Product Descriptions -->
-      <section class="text-center" id="products">
+      <section class="section-div text-center" id="products">
         <h2>Product Information</h2>               
         <div class="flex-container text-center space-evenly">
           
@@ -70,41 +72,35 @@
           </div>          
         </div>
       </section>
-      <br>
        
       <!-- Video -->
-      <section class="text-center"> <!-- Centers the video on the page -->
+      <div class="text-center"> <!-- Centers the video on the page -->
        
-       <!-- iframe is the recommended element for embedding YouTube videos.
-        this iframe was copied from YouTube from the share option. -->
+       <!-- This iframe was copied from YouTube from the share option. -->
         <iframe 
-              class="block"
+              class="utube"
               id="video"
               width="560" 
               height="315" 
               src="https://www.youtube.com/embed/bghOBRA0z-Y" 
-              frameborder="0"             
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
           </iframe> 
-        </div>
-        <br><br><br>        
-      </section>
+      </div>           
 
-        <!-- About the company -->
-        <section id="about">
-        <h2 class="text-center"> About Rusell Harmonicas</h2>
-        <p class="about__p"> Rusell Harmonicas has been a Dallas tradition since 1910 when it was
-            founded by Mark Rusell. Mark had a passion for music and was 
-            determined to make the best harmonicas possible. After a small loan 
-            from his best friend Brad Smith, Mark was able to open his harmonica
-            factory. Since that humble beginning, Rusell Harmonicas has been the 
-            top manufacture of quality harmonicas in the United States.</p>      
+      <!-- About the company -->
+      <section class="section-div" id="about">
+      <h2 class="text-center"> About Rusell Harmonicas</h2>
+      <p class="about__p"> Rusell Harmonicas has been a Dallas tradition since 1910 when it was
+          founded by Mark Rusell. Mark had a passion for music and was 
+          determined to make the best harmonicas possible. After a small loan 
+          from his best friend Brad Smith, Mark was able to open his harmonica
+          factory. Since that humble beginning, Rusell Harmonicas has been the 
+          top manufacture of quality harmonicas in the United States.</p>      
       </section>
-      <br><br><br>
         
       <!-- Contact information -->
-      <section>
+      <section class="section-div">
         <h2 class="text-center">Contact Us</h2>
         <form 
             class="text-center" 
@@ -112,12 +108,13 @@
             action="https://www.freecodecamp.com/email-submit">            
           <label for="email">Please enter your email to learn more:</label>
           <input 
-              id="email"
+          class="form__email-input"    
+          id="email"
               name="email" 
               type="email" 
-              placeholder="youremail@email.com"
+              placeholder="YourName@email.com"
               required>
-          <br><br>          
+                    
           <input 
               class="btn"
               id="submit"
@@ -125,7 +122,7 @@
               type="submit"
               value="Submit Request">      
         </form>
-    </section>
+      </section>
     </main>
-      </body>
+  </body>
 </html>
