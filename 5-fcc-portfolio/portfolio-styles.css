@@ -2,7 +2,9 @@
 
 /***** Design Information *****
   Color Palette
-
+    Background and text - darkolivegreen
+    Background and text - beige
+    Higlights for project cards - #cf5d11
 
   Fonts
 
@@ -23,10 +25,12 @@
   z-index: 1;
   height: 50px;
   width: 100vw;
-  background-color: cadetblue;
+  background-color: darkolivegreen;
 }
 
 .navbar__ul {  
+  display: flex;
+  justify-content: end;
   position: fixed;
   right: 0;
   top: 0;
@@ -36,35 +40,51 @@
 .navbar__li {
   display: inline;
   list-style-type: disc;
+  margin-right: 30px;
+  color: beige;
 }
 
 /***** || Welcome Section *****/
 
 .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;  
-  background-color: aliceblue;
-  line-height: 100vh;
+  background-color: beige;
+  color: darkred;
 }
 
-
+.welcome__backdrop {
+  background: url("https://i.postimg.cc/zGKHkP60/Background3.png"); 
+    /* Attribution: Maritess Sulcer, CC0, via Wikimedia Commons */
+  background-size: cover;
+  width: 75%;
+  padding: 0;
+  margin: 15rem auto;
+}
 
 .welcome__h1 {
+  font: bold 6rem sans-serif;
   text-align: center;
-  font-size: 40px;
+  color: black; /* black */
+  background-color: beige; /* white */
+  margin: 0;
+  mix-blend-mode: lighten;
+    /* lighten shows a background color other that white. When the background
+  colors are white, screen works well (lightent can work as well for a light 
+  colored backgrounds. */
 }
-
-
 
 /***** || Portfolio Section *****/
+
 .sect-heading {
   text-align: center;
-  background-color: darkslategray;
+  background-color: darkolivegreen;
   margin: 0;
   padding-top: 50px;
-  color: lightgrey;
+  color: beige;
 }
-
-
 
 .projects {
   display: flex;
@@ -72,30 +92,57 @@
   align-items: center;
   flex-wrap: wrap;   
   padding: 50px;
-  background-color: darkslategray;
-
+  background-color: darkolivegreen;
 }
 
 .card {
   border-style: solid;
-  border-color: green;
-  border-width: 5px;
+  border-color: #cf5d11;
+  border-radius: 10px;
+  border-width: 10px;
   max-width: fit-content;
   padding: 0;
   margin: 10px;
   text-align: center;
-  background-color: aliceblue;
+  font-weight: bold;
+  background-color: beige;
+  color: #cf5d11;
 }
 
 .card__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-height: 286px;  
 }
 
+/***** || Contact Section *****/
+.sect-heading--r {
+  background-color: beige;
+  color: darkolivegreen;  
+}
 
+.contact-div {
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  color: darkolivegreen;
+}
 
+.contact-text {
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+/***** || Footer Section *****/
 
 .footer__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: darkolivegreen;
   text-align: center;
+  font-size: small;
+  color: beige;
 }
