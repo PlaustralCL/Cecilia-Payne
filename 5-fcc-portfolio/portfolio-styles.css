@@ -2,59 +2,80 @@
 
 /***** Design Information *****
   Color Palette
-    Background and text - darkolivegreen
-    Background and text - beige
+    Background and text - darkolivegreen #556B2F
+    Background and text - beige #F5F5DC
     Higlights for project cards - #cf5d11
 
   Fonts
-
+    Welcome - font-family: Arial, Helvetica, sans-serif;
+    All other text - font-family: 'Noto Sans JP', sans-serif;
 *****/
 
 .page {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif; /* TODO: customize fonts */ 
 }
 
 /***** || Navbar *****/
-
 .navbar {
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   height: 50px;
   width: 100vw;
   background-color: darkolivegreen;
 }
 
+@media (max-width: 640px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
 .navbar__ul {  
-  display: flex;
-  justify-content: end;
-  position: fixed;
-  right: 0;
-  top: 0;
+  margin-top: 10px;
   margin-right: 20px;
+  padding-right: 10px;
 }
 
 .navbar__li {
   display: inline;
-  list-style-type: disc;
-  margin-right: 30px;
+  list-style-type: none;  
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 9px;
+  padding-bottom: 15px;
+  color: beige;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navbar__li:hover {
+  background-color: #889E5F; 
+}
+
+.navbar a:link {
+  color: beige;
+}
+
+.navbar a:visited {
   color: beige;
 }
 
 /***** || Welcome Section *****/
-
 .welcome {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;  
   background-color: beige;
-  color: darkred;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Knockout text source inspiration -
+    https://medium.com/@leahmccormick/creating-knockout-text-using-simple-css-7ea10b6bc96c */
 .welcome__backdrop {
   background: url("https://i.postimg.cc/zGKHkP60/Background3.png"); 
     /* Attribution: Maritess Sulcer, CC0, via Wikimedia Commons */
@@ -65,25 +86,31 @@
 }
 
 .welcome__h1 {
-  font: bold 6rem sans-serif;
-  text-align: center;
-  color: black; /* black */
-  background-color: beige; /* white */
   margin: 0;
   mix-blend-mode: lighten;
+  background-color: beige; /* white */
+  color: black; /* black */
+  font: bold 6rem sans-serif;
+  text-align: center;
     /* lighten shows a background color other that white. When the background
   colors are white, screen works well (lightent can work as well for a light 
   colored backgrounds. */
 }
 
-/***** || Portfolio Section *****/
+@media (max-width: 640px) {
+  .welcome__h1 {
+    font-size: 48px;
+  }
+}
 
+/***** || Portfolio Section *****/
 .sect-heading {
   text-align: center;
   background-color: darkolivegreen;
   margin: 0;
   padding-top: 50px;
   color: beige;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .projects {
@@ -95,18 +122,39 @@
   background-color: darkolivegreen;
 }
 
+@media (min-width: 1024px) {
+  .projects {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .projects {
+    padding: 50px;
+  }
+}
+
 .card {
   border-style: solid;
   border-color: #cf5d11;
   border-radius: 10px;
   border-width: 10px;
   max-width: fit-content;
-  padding: 0;
   margin: 10px;
-  text-align: center;
-  font-weight: bold;
+  padding: 0;
   background-color: beige;
-  color: #cf5d11;
+  color: darkolivegreen;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
 }
 
 .card__img {
@@ -132,17 +180,26 @@
 .contact-text {
   margin-right: 20px;
   margin-bottom: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.contact-div a:link {
+  color: darkolivegreen;
+}
+
+.contact-div a:visited {
+  color: darkolivegreen;
 }
 
 /***** || Footer Section *****/
-
 .footer__text {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: darkolivegreen;
-  text-align: center;
-  font-size: small;
   color: beige;
+  text-align: center;  
+  font-size: small;
+  font-family: 'Noto Sans JP', sans-serif;
 }

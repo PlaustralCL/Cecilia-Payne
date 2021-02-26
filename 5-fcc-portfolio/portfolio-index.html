@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>FCC Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Free Code Camp Portfolio project. Requirements are here:
+      https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage -->
+    <title>FCC Portfolio</title>
     
     <script src="https://kit.fontawesome.com/6326b255ea.js" crossorigin="anonymous"></script>
     
     <!-- Fonts -->
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <!-- Stye Sheet-->
     <link rel="stylesheet" href="portfolio-styles.css">
   </head>
   
   <body class="page">
     <!-- Navigation Bar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <ul class="navbar__ul">
-        <li class="navbar__li">Welcome</li>
-        <li class="navbar__li">Projects</li>
-        <li class="navbar__li">Contact</li>
+        <li class="navbar__li"><a href="#welcome-section">Welcome</li></a>
+        <li class="navbar__li"><a href="#projects">Projects</li></a>
+        <li class="navbar__li"><a href="#contact">Contact</li></a>
       </ul>
     </nav>
     
     <!-- Welcome Section -->
-    <section class="welcome">
+    <section class="welcome" id="welcome-section">
            
       <div class="welcome__backdrop">
         <h1 class="welcome__h1">Welcome!</h1>
@@ -33,12 +35,16 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section>
+    <section id="projects">
       <h2 class="sect-heading">Free Code Camp<br>Responsive Web Design Projects</h2>
       
       <!-- Project Cards -->
       <div class="projects">        
-        <div class="card"> <!-- images hosted with postimages.org -->
+        <div class="card project-tile"> 
+          <!-- The class "project-tile" is not not used in the CSS. Includiing
+              This class is a requirement of the project. -->
+
+          <!-- images hosted with postimages.org -->
           <a href="https://codepen.io/plaustralcl/full/yLVJKjO" target="_blank">
             <img 
               class="card__img"          
@@ -81,11 +87,16 @@
     </section> <!-- End of Portfolio Section -->
 
     <!-- Contact Section -->
-    <section class="sect-heading sect-heading--r">
+    <section class="sect-heading sect-heading--r" id="contact">
       <h2>Contact Information</h2>
       <div class="contact-div">
-        <p class="contact-text"><i class="fab fa-github"></i> Github</p>
-        <p><i class="fab fa-free-code-camp"></i> Free Code Camp</p>
+
+        <p class="contact-text">
+          <a id="profile-link" href="https://github.com/PlaustralCL" target="_blank">
+          <i class="fab fa-github"></i> Github</p></a> <!-- Github -->
+
+        <p><a href="https://www.freecodecamp.org" target="_blank">
+          <i class="fab fa-free-code-camp"></i> Free Code Camp</p></a> <!-- FCC -->
       </div>
     </section>
 
