@@ -1,5 +1,5 @@
 # Free Code Camp
-A reposoitory for projects completed as part of Free Code Camp's program.
+A reposoitory for projects completed as part of Free Code Camp's Responsive Web Design program.
 
 ## Responsive Web Design
 1. Tribute Page
