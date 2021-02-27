@@ -93,7 +93,7 @@
   font: bold 6rem sans-serif;
   text-align: center;
     /* lighten shows a background color other that white. When the background
-  colors are white, screen works well (lightent can work as well for a light 
+  colors are white, screen works well (lighten can work as well for a light 
   colored backgrounds. */
 }
 
@@ -161,7 +161,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-height: 286px;  
+  height: 286px;
+  width: 303.031px;
+   
 }
 
 /***** || Contact Section *****/
