@@ -172,18 +172,37 @@ a:hover {
 }
 
 .utube {
-   border: none;
-   margin-bottom: 40px;
-   margin-top: 40px;
+  width: 560px; 
+  height: 315px;  
+  border: none;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+  .utube {
+    width: 300px; 
+    height: 169px;  
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__p {
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
  
-.about__p{
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 40px;
-  text-align: left;
-  
-}
+
 
 .form__email-input {
   margin-bottom: 20px;
